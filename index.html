@@ -1,16 +1,20 @@
 <html>
   <head>
-    <script src = "angular.min.js"></script>
     <title>Love Me!</title>
+    <link rel="stylesheet" type = "text/css" href = "main.css"/>
+    <script src = "angular.min.js"></script>
+    <script src = "main.js"></script>
   </head>
   <body x-ng-app="">
     <div id = "main">
       <h2>LoveMe GA KittyCat Adoption Service</h2>
-      <ul>
-        <li>Dr. Doom <img src = "http://placekitten.com/150/150"/></li>
-        <li>Wilson <img src = "http://placekitten.com/151/150"/></li>
-        <li>Tuna <img src = "http://placekitten.com/152/150"/></li>
-      </ul>
+      <div x-ng-controller = "KittensCtrl">
+        <ul>
+              <li>Dr. Doom <img src = "http://placekitten.com/150/150"/></li>
+              <li>Wilson <img src = "http://placekitten.com/151/150"/></li>
+              <li>Tuna <img src = "http://placekitten.com/152/150"/></li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

@@ -14,6 +14,11 @@
                 {{pet.name}} <img src = "{{pet.image}}"/>
               </li>
         </ul>
+        <form x-ng-submit = "addPet()">
+          <input type="name" x-ng-model = "newName" placeholder = "Pet's name"/>
+          <input type = "text" x-ng-model = "newImgUrl" placeholder = "Image URL"/>
+          <input type = "submit" value = "ADD"></input>
+        </form>
       </div>
     </div>
   </body>
